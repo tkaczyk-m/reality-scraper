@@ -291,14 +291,14 @@ def notify_macos(new_listings: list):
         sources[l["source"]] = sources.get(l["source"], 0) + 1
     parts = [f"{v}× {k}" for k, v in sources.items()]
     body = ", ".join(parts)
+    if sys.platform != "darwin":
+        return
     try:
         subprocess.run(
             ["osascript", "-e",
              f'display notification "{body}" with title "{title}" sound name "Glass"'],
             check=True, capture_output=True,
         )
-    except FileNotFoundError:
-        pass  # not macOS (e.g. GitHub Actions Linux runner)
     except Exception as e:
         print(f"  [notify] macOS notification failed: {e}")
 
