@@ -806,11 +806,20 @@ def main():
                 print(f"  [notify] skipped: {e}")
 
             try:
-                today_str = datetime.now().strftime("%d.%m.%Y")
+                now = datetime.now()
+                today_tuple = (now.day, now.month, now.year)
                 todays_listings = []
                 for l in new_listings:
-                    vlozeno = l.get("vloženo") or ""
-                    if vlozeno.startswith(today_str):
+                    vlozeno = (l.get("vloženo") or "").strip()
+                    parts = [p.strip() for p in vlozeno.split(".") if p.strip()]
+                    matched = False
+                    if len(parts) >= 3:
+                        try:
+                            if (int(parts[0]), int(parts[1]), int(parts[2])) == today_tuple:
+                                matched = True
+                        except ValueError:
+                            pass
+                    if matched:
                         todays_listings.append(l)
                     elif l.get("source") == "bezrealitky" and l.get("days_sort", 9999) == 0:
                         todays_listings.append(l)
