@@ -297,6 +297,8 @@ def notify_macos(new_listings: list):
              f'display notification "{body}" with title "{title}" sound name "Glass"'],
             check=True, capture_output=True,
         )
+    except FileNotFoundError:
+        pass  # not macOS (e.g. GitHub Actions Linux runner)
     except Exception as e:
         print(f"  [notify] macOS notification failed: {e}")
 
