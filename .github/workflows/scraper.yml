@@ -1,0 +1,50 @@
+name: Real Estate Scraper
+
+on:
+  schedule:
+    - cron: '0,30 * * * *'   # every 30 minutes
+  workflow_dispatch:           # manual trigger from GitHub UI
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Cache pip packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-${{ hashFiles('requirements.txt') }}
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          playwright install chromium
+          playwright install-deps chromium
+
+      - name: Run scraper
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RECIPIENTS: ${{ secrets.RECIPIENTS }}
+        run: |
+          python3 combined_scraper.py \
+            --no-open \
+            --output index.html \
+            --email "$RECIPIENTS" \
+            --resend-key "$RESEND_API_KEY"
+
+      - name: Commit updated cache and report
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add listings_cache.json index.html
+          git diff --staged --quiet || git commit -m "chore: update listings cache and report [skip ci]"
+          git push

@@ -1,0 +1,7 @@
+combined_report.html
+bezrealitky_report.html
+idnes_report.html
+sreality_report.html
+__pycache__/
+*.pyc
+.env
