@@ -46,5 +46,11 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
           git add listings_cache.json index.html
-          git diff --staged --quiet || git commit -m "chore: update listings cache and report [skip ci]"
-          git push
+          git diff --staged --quiet && exit 0
+          git commit -m "chore: update listings cache and report [skip ci]"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            echo "Push failed (attempt $i), retrying..."
+            sleep 5
+          done
+          exit 1
