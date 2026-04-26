@@ -212,6 +212,15 @@ def run_sreality(cache: Cache, per_page: int, min_price: int, max_price: int) ->
     cached_out = [cache.get(f"sr:{l['hash_id']}") for l in all_raw
                   if cache.has(f"sr:{l['hash_id']}")]
 
+    sr_thumb_map = {l['hash_id']: l.get('thumb', '') for l in all_raw}
+    for l in cached_out:
+        if not l.get('thumb_url'):
+            hid = l.get('_key', '').replace('sr:', '')
+            url = sr_thumb_map.get(hid, '')
+            if url:
+                l['thumb_url'] = url
+                cache.set(l['_key'], l)
+
     print(f"  Total from API: {len(all_raw)} | cached: {len(cached_out)} | new: {len(new_raw)}")
 
     new_norm = []
@@ -246,6 +255,14 @@ def run_idnes(cache: Cache) -> list:
     new_raw    = [l for l in all_raw if not cache.has(f"id:{l['url']}")]
     cached_out = [cache.get(f"id:{l['url']}") for l in all_raw
                   if cache.has(f"id:{l['url']}")]
+
+    id_thumb_map = {l['url']: l.get('thumb_url', '') for l in all_raw}
+    for l in cached_out:
+        if not l.get('thumb_url'):
+            url = id_thumb_map.get(l.get('url', ''), '')
+            if url:
+                l['thumb_url'] = url
+                cache.set(l['_key'], l)
 
     print(f"  Total from web: {len(all_raw)} | cached: {len(cached_out)} | new: {len(new_raw)}")
 
