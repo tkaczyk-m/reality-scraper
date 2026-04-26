@@ -433,7 +433,9 @@ def notify_email_resend(new_listings: list, recipients: str, api_key: str, from_
             json=payload,
             timeout=15,
         )
-        resp.raise_for_status()
+        if not resp.ok:
+            print(f"  [resend] HTTP {resp.status_code}: {resp.text[:300]}")
+            resp.raise_for_status()
         print(f"  Resend: email sent to {', '.join(recipient_list)} ({len(new_listings)} new listings)")
     except Exception as e:
         print(f"  [resend] Failed: {e}")
@@ -780,8 +782,8 @@ def main():
                         help="Comma-separated recipient email addresses")
     parser.add_argument("--resend-key",   default=os.environ.get("RESEND_API_KEY", ""),
                         help="Resend.com API key (preferred, no SMTP needed)")
-    parser.add_argument("--resend-from",  default="scraper@resend.dev",
-                        help="Sender address for Resend (default: scraper@resend.dev)")
+    parser.add_argument("--resend-from",  default="onboarding@resend.dev",
+                        help="Sender address for Resend (default: onboarding@resend.dev)")
     parser.add_argument("--smtp-host",    default="smtp.gmail.com")
     parser.add_argument("--smtp-port",    type=int, default=465)
     parser.add_argument("--smtp-user",    default=os.environ.get("SMTP_USER", ""))
