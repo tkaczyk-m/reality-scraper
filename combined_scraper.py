@@ -781,28 +781,36 @@ def main():
         new_listings, output_path = run_once(cache, args)
 
         if new_listings:
-            notify_macos(new_listings)
-            today_str = datetime.now().strftime("%d.%m.%Y")
-            todays_listings = [
-                l for l in new_listings
-                if ((l.get("vloženo") or "").startswith(today_str))
-                or (l.get("source") == "bezrealitky" and l.get("days_sort", 9999) == 0)
-            ]
-            if todays_listings:
-                print(f"  Today's new listings: {len(todays_listings)} (email filter)")
-            else:
-                print("  No listings from today — skipping email")
-            if args.email and args.resend_key and todays_listings:
-                notify_email_resend(todays_listings, args.email,
-                                    args.resend_key, args.resend_from)
-            elif args.email and args.smtp_user and args.smtp_pass and todays_listings:
-                notify_email(todays_listings, args.email,
-                             args.smtp_host, args.smtp_port,
-                             args.smtp_user, args.smtp_pass)
-            elif args.email and not todays_listings:
-                pass
-            elif args.email:
-                print("  [email] Provide --resend-key or --smtp-user/--smtp-pass")
+            try:
+                notify_macos(new_listings)
+            except Exception as e:
+                print(f"  [notify] skipped: {e}")
+
+            try:
+                today_str = datetime.now().strftime("%d.%m.%Y")
+                todays_listings = []
+                for l in new_listings:
+                    vlozeno = l.get("vloženo") or ""
+                    if vlozeno.startswith(today_str):
+                        todays_listings.append(l)
+                    elif l.get("source") == "bezrealitky" and l.get("days_sort", 9999) == 0:
+                        todays_listings.append(l)
+
+                if todays_listings:
+                    print(f"  Today's new listings: {len(todays_listings)} (email filter)")
+                    if args.email and args.resend_key:
+                        notify_email_resend(todays_listings, args.email,
+                                            args.resend_key, args.resend_from)
+                    elif args.email and args.smtp_user and args.smtp_pass:
+                        notify_email(todays_listings, args.email,
+                                     args.smtp_host, args.smtp_port,
+                                     args.smtp_user, args.smtp_pass)
+                    elif args.email:
+                        print("  [email] Provide --resend-key or --smtp-user/--smtp-pass")
+                else:
+                    print("  No listings from today — skipping email")
+            except Exception as e:
+                print(f"  [email] skipped: {e}")
 
         if open_browser:
             webbrowser.open(f"file://{output_path}")
