@@ -786,7 +786,7 @@ def main():
             today_str = datetime.now().strftime("%d.%m.%Y")
             todays_listings = [
                 l for l in new_listings
-                if (l.get("vloženo", "").startswith(today_str))
+                if ((l.get("vloženo") or "").startswith(today_str))
                 or (l.get("source") == "bezrealitky" and l.get("days_sort", 9999) == 0)
             ]
             if todays_listings:
