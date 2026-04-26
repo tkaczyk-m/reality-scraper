@@ -619,8 +619,8 @@ ALLOWED_STAV = sr.ALLOWED_STAV
 
 
 def render_card(l: dict) -> str:
-    src = l.get("thumb_b64", "")
-    img_html = f'<img class="card-img" src="{src}" alt="">' if src else '<div class="card-img-placeholder">🏠</div>'
+    src = l.get("thumb_url", "") or l.get("thumb_b64", "")
+    img_html = f'<img class="card-img" src="{src}" loading="lazy" alt="">' if src else '<div class="card-img-placeholder">🏠</div>'
 
     source = l["source"]
     source_label = {"sreality": "Sreality", "idnes": "iDnes",
@@ -721,7 +721,6 @@ def run_once(cache: Cache, args) -> list:
     cache.save(all_active_keys)
 
     combined = sr_listings + id_listings + bz_listings
-    combined = download_all_thumbs(combined)
 
     # Mark listings that weren't in the cache before this run as fresh
     new_listings = []
