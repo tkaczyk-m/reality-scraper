@@ -799,6 +799,7 @@ def main():
         print(f"{'='*60}")
         new_listings, output_path = run_once(cache, args)
 
+        print(f"  [email] new_listings={len(new_listings)} email={bool(args.email)} resend_key={bool(args.resend_key)} from={args.resend_from}")
         if new_listings:
             try:
                 notify_macos(new_listings)
@@ -824,6 +825,8 @@ def main():
                     elif l.get("source") == "bezrealitky" and l.get("days_sort", 9999) == 0:
                         todays_listings.append(l)
 
+                sample_dates = [(l.get("source"), l.get("vloženo")) for l in new_listings[:5]]
+                print(f"  [email] today={today_tuple} todays_match={len(todays_listings)}/{len(new_listings)} sample={sample_dates}")
                 if todays_listings:
                     print(f"  Today's new listings: {len(todays_listings)} (email filter)")
                     if args.email and args.resend_key:
