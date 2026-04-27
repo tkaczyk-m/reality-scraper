@@ -5,6 +5,10 @@ on:
     - cron: '0,30 * * * *'   # every 30 minutes
   workflow_dispatch:           # manual trigger from GitHub UI
 
+concurrency:
+  group: scraper
+  cancel-in-progress: false
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
@@ -45,11 +49,23 @@ jobs:
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add listings_cache.json index.html
-          git diff --staged --quiet && exit 0
-          git commit -m "chore: update listings cache and report [skip ci]"
+
+          # Stash freshly generated artifacts
+          cp index.html /tmp/index.html.new
+          cp listings_cache.json /tmp/listings_cache.json.new
+
           for i in 1 2 3 4 5; do
-            git pull --rebase origin main && git push && exit 0
+            git fetch origin main
+            git reset --hard origin/main
+
+            # Restore our fresh artifacts (overwrite whatever remote has)
+            cp /tmp/index.html.new index.html
+            cp /tmp/listings_cache.json.new listings_cache.json
+
+            git add index.html listings_cache.json
+            git diff --staged --quiet && exit 0
+            git commit -m "chore: update listings cache and report [skip ci]"
+            git push && exit 0
             echo "Push failed (attempt $i), retrying..."
             sleep 5
           done
