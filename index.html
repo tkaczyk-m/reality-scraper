@@ -136,26 +136,38 @@
 <body>
 <header>
   <h1>Praha — 2+kk+2+1 k prodeji · Cihla</h1>
-  <p>Sreality.cz + iDnes Reality + Bezrealitky · Velmi dobrý / Novostavba / Po rekonstrukci · Vygenerováno 16.05.2026 16:32</p>
+  <p>Sreality.cz + iDnes Reality + Bezrealitky · Velmi dobrý / Novostavba / Po rekonstrukci · Vygenerováno 16.05.2026 17:36</p>
   <div class="stats">
-    <span class="stat">1609 celkem</span>
-    <span class="stat">122 nových ✨</span>
-    <span class="stat">875 Sreality</span>
+    <span class="stat">1615 celkem</span>
+    <span class="stat">114 nových ✨</span>
+    <span class="stat">881 Sreality</span>
     <span class="stat">627 iDnes</span>
     <span class="stat">107 Bezrealitky</span>
     
   </div>
 </header>
 <div class="tabs">
-  <button class="tab-btn active" onclick="filterSource('all', this)">Všechny (1609)</button>
-  <button class="tab-btn new" onclick="filterSource('new', this)">Nové ✨ (122)</button>
-  <button class="tab-btn" onclick="filterSource('sreality', this)">Sreality (875)</button>
+  <button class="tab-btn active" onclick="filterSource('all', this)">Všechny (1615)</button>
+  <button class="tab-btn new" onclick="filterSource('new', this)">Nové ✨ (114)</button>
+  <button class="tab-btn" onclick="filterSource('sreality', this)">Sreality (881)</button>
   <button class="tab-btn idnes" onclick="filterSource('idnes', this)">iDnes (627)</button>
   <button class="tab-btn bezrealitky" onclick="filterSource('bezrealitky', this)">Bezrealitky (107)</button>
 </div>
 <main>
   <div class="grid" id="grid">
     <div class="card is-fresh" data-source="sreality">
+  <span class="source-badge source-sreality">Sreality</span>
+  <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_qB_C/nCTUX1iX5BWLrlBT6oGolW3c/fcb3.jpeg?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
+  <div class="card-body">
+    <div class="card-title">Prodej bytu 2+kk 73 m² (Mezonet)</div>
+    <div class="card-locality">📍 Zborovská, Praha 5 - Smíchov</div>
+    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-label">🧱 Velmi dobrý</span></div>
+    <div class="card-price price-sreality">10 090 000 Kč</div>
+    <div class="card-dates"><div><span>Vloženo:</span> 16. 5. 2026</div><div><span>Upraveno:</span> 16. 5. 2026</div></div>
+    <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+kk/-/987533388" target="_blank" rel="noopener">Zobrazit inzerát →</a>
+  </div>
+</div>
+<div class="card" data-source="sreality">
   <span class="source-badge source-sreality">Sreality</span>
   <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_qB_C/kcHp2YdDtEBMvIBFTEGokOng/001e.jpeg?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
   <div class="card-body">
@@ -165,18 +177,6 @@
     <div class="card-price price-sreality">7 780 000 Kč</div>
     <div class="card-dates"><div><span>Vloženo:</span> 16. 5. 2026</div><div><span>Upraveno:</span> 16. 5. 2026</div></div>
     <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+kk/-/970756172" target="_blank" rel="noopener">Zobrazit inzerát →</a>
-  </div>
-</div>
-<div class="card is-fresh" data-source="sreality">
-  <span class="source-badge source-sreality">Sreality</span>
-  <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_qB_C/kcHp2YdDtDrxR2BIBjGokAvo/0458.jpeg?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
-  <div class="card-body">
-    <div class="card-title">Prodej bytu 2+1 61 m²</div>
-    <div class="card-locality">📍 Ruská, Praha 10 - Vršovice</div>
-    <div class="badges"><span class="badge badge-disp">2+1</span><span class="badge badge-label">🧱 Velmi dobrý</span></div>
-    <div class="card-price price-sreality">8 750 000 Kč</div>
-    <div class="card-dates"><div><span>Vloženo:</span> 16. 5. 2026</div><div><span>Upraveno:</span> 16. 5. 2026</div></div>
-    <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+1/-/1859948620" target="_blank" rel="noopener">Zobrazit inzerát →</a>
   </div>
 </div>
 <div class="card" data-source="sreality">
@@ -265,6 +265,18 @@
 </div>
 <div class="card" data-source="sreality">
   <span class="source-badge source-sreality">Sreality</span>
+  <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_qB_C/kcHp2YdDtDrxR2BIBjGokAvo/0458.jpeg?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
+  <div class="card-body">
+    <div class="card-title">Prodej bytu 2+1 61 m²</div>
+    <div class="card-locality">📍 Ruská, Praha 10 - Vršovice</div>
+    <div class="badges"><span class="badge badge-disp">2+1</span><span class="badge badge-label">🧱 Velmi dobrý</span></div>
+    <div class="card-price price-sreality">8 750 000 Kč</div>
+    <div class="card-dates"><div><span>Vloženo:</span> 16. 5. 2026</div><div><span>Upraveno:</span> 16. 5. 2026</div></div>
+    <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+1/-/1859948620" target="_blank" rel="noopener">Zobrazit inzerát →</a>
+  </div>
+</div>
+<div class="card" data-source="sreality">
+  <span class="source-badge source-sreality">Sreality</span>
   <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_qB_C/nCTUX1iX5bIUBBVfPGocWM1/e9d3.jpeg?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
   <div class="card-body">
     <div class="card-title">Prodej bytu 2+1 49 m²</div>
@@ -287,18 +299,6 @@
     <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+1/-/3723268172" target="_blank" rel="noopener">Zobrazit inzerát →</a>
   </div>
 </div>
-<div class="card is-fresh" data-source="sreality">
-  <span class="source-badge source-sreality">Sreality</span>
-  <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_qB_C/kcHp2YdDtBM3KVBGKqGoHXFA/8987.jpeg?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
-  <div class="card-body">
-    <div class="card-title">Prodej bytu 2+kk 51 m²</div>
-    <div class="card-locality">📍 Vyšší, Praha 4 - Nusle</div>
-    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-label">🧱 Velmi dobrý</span></div>
-    <div class="card-price price-sreality">7 990 000 Kč</div>
-    <div class="card-dates"><div><span>Vloženo:</span> 15. 5. 2026</div><div><span>Upraveno:</span> 15. 5. 2026</div><div class="full-width"><span>Zobrazeno:</span> 1 253 ×</div></div>
-    <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+kk/-/235704396" target="_blank" rel="noopener">Zobrazit inzerát →</a>
-  </div>
-</div>
 <div class="card" data-source="sreality">
   <span class="source-badge source-sreality">Sreality</span>
   <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_qB_C/kcHp2YdDtDgLT0BHQHGoGFW7/ed29.jpeg?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
@@ -309,6 +309,18 @@
     <div class="card-price price-sreality">5 500 000 Kč</div>
     <div class="card-dates"><div><span>Vloženo:</span> 15. 5. 2026</div><div><span>Upraveno:</span> 15. 5. 2026</div></div>
     <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+kk/-/2387382348" target="_blank" rel="noopener">Zobrazit inzerát →</a>
+  </div>
+</div>
+<div class="card" data-source="sreality">
+  <span class="source-badge source-sreality">Sreality</span>
+  <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_qB_C/kcHp2YdDtBM3KVBGKqGoHXFA/8987.jpeg?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
+  <div class="card-body">
+    <div class="card-title">Prodej bytu 2+kk 51 m²</div>
+    <div class="card-locality">📍 Vyšší, Praha 4 - Nusle</div>
+    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-label">🧱 Velmi dobrý</span></div>
+    <div class="card-price price-sreality">7 990 000 Kč</div>
+    <div class="card-dates"><div><span>Vloženo:</span> 15. 5. 2026</div><div><span>Upraveno:</span> 15. 5. 2026</div><div class="full-width"><span>Zobrazeno:</span> 1 253 ×</div></div>
+    <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+kk/-/235704396" target="_blank" rel="noopener">Zobrazit inzerát →</a>
   </div>
 </div>
 <div class="card" data-source="sreality">
@@ -585,6 +597,18 @@
     <div class="card-price price-sreality">10 970 000 Kč</div>
     <div class="card-dates"><div><span>Vloženo:</span> 14. 5. 2026</div><div><span>Upraveno:</span> 14. 5. 2026</div></div>
     <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+kk/-/907972684" target="_blank" rel="noopener">Zobrazit inzerát →</a>
+  </div>
+</div>
+<div class="card" data-source="sreality">
+  <span class="source-badge source-sreality">Sreality</span>
+  <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_qB_C/nCTUX1iX5Do9kXBSMSGnKqKB/1b95.jpeg?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
+  <div class="card-body">
+    <div class="card-title">Prodej bytu 2+kk 59 m² (Jednopodlažní)</div>
+    <div class="card-locality">📍 Na Maninách, Praha 7 - Holešovice</div>
+    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-label">🧱 Velmi dobrý</span></div>
+    <div class="card-price price-sreality">13 600 000 Kč</div>
+    <div class="card-dates"><div><span>Vloženo:</span> 14. 5. 2026</div><div><span>Upraveno:</span> 14. 5. 2026</div></div>
+    <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+kk/-/1178505292" target="_blank" rel="noopener">Zobrazit inzerát →</a>
   </div>
 </div>
 <div class="card" data-source="sreality">
@@ -1021,6 +1045,18 @@
 </div>
 <div class="card" data-source="sreality">
   <span class="source-badge source-sreality">Sreality</span>
+  <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_qB_B/kcHp2YdDtCJexHHHHGlfUFq/64ef.jpeg?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
+  <div class="card-body">
+    <div class="card-title">Prodej bytu 2+kk 49 m²</div>
+    <div class="card-locality">📍 Svitákova, Praha 5 - Stodůlky</div>
+    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-label">🧱 Velmi dobrý</span></div>
+    <div class="card-price price-sreality">8 790 000 Kč</div>
+    <div class="card-dates"><div><span>Vloženo:</span> 11. 5. 2026</div><div><span>Upraveno:</span> 11. 5. 2026</div></div>
+    <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+kk/-/282759244" target="_blank" rel="noopener">Zobrazit inzerát →</a>
+  </div>
+</div>
+<div class="card" data-source="sreality">
+  <span class="source-badge source-sreality">Sreality</span>
   <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_qB_B/kcHp2YdDtBM3KVBEMEGlcpKO/d279.jpeg?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
   <div class="card-body">
     <div class="card-title">Prodej bytu 2+kk 60 m² (Jednopodlažní)</div>
@@ -1153,18 +1189,6 @@
 </div>
 <div class="card" data-source="sreality">
   <span class="source-badge source-sreality">Sreality</span>
-  <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_qB_B/kcHp2YdDtCJexHHHHGlfUFq/64ef.jpeg?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
-  <div class="card-body">
-    <div class="card-title">Prodej bytu 2+kk 49 m²</div>
-    <div class="card-locality">📍 Svitákova, Praha 5 - Stodůlky</div>
-    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-label">🧱 Velmi dobrý</span></div>
-    <div class="card-price price-sreality">8 790 000 Kč</div>
-    <div class="card-dates"><div><span>Vloženo:</span> 11. 5. 2026</div><div><span>Upraveno:</span> 11. 5. 2026</div></div>
-    <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+kk/-/282759244" target="_blank" rel="noopener">Zobrazit inzerát →</a>
-  </div>
-</div>
-<div class="card" data-source="sreality">
-  <span class="source-badge source-sreality">Sreality</span>
   <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_qB_B/nCTUX1iX5CDciVBoXzGld5FX/c636.jpeg?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
   <div class="card-body">
     <div class="card-title">Prodej bytu 2+kk 47 m²</div>
@@ -1269,6 +1293,18 @@
     <div class="card-price price-sreality">8 590 000 Kč</div>
     <div class="card-dates"><div><span>Vloženo:</span> 10. 5. 2026</div><div><span>Upraveno:</span> 10. 5. 2026</div></div>
     <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+kk/-/1117491276" target="_blank" rel="noopener">Zobrazit inzerát →</a>
+  </div>
+</div>
+<div class="card is-fresh" data-source="sreality">
+  <span class="source-badge source-sreality">Sreality</span>
+  <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_qB_B/kcHp2YdDtDrxR2BEZtGkTOr2/a3fb.png?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
+  <div class="card-body">
+    <div class="card-title">Prodej bytu 3+kk 100 m²</div>
+    <div class="card-locality">📍 Jeřabinová, Praha 5 - Motol</div>
+    <div class="badges"><span class="badge badge-disp">2+1</span><span class="badge badge-label">🧱 Po rekonstrukci</span></div>
+    <div class="card-price price-sreality">14 210 000 Kč</div>
+    <div class="card-dates"><div><span>Vloženo:</span> 9. 5. 2026</div><div><span>Upraveno:</span> 12. 5. 2026</div><div class="full-width"><span>Zobrazeno:</span> 1 535 ×</div></div>
+    <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+1/-/1993052236" target="_blank" rel="noopener">Zobrazit inzerát →</a>
   </div>
 </div>
 <div class="card" data-source="sreality">
@@ -2701,18 +2737,6 @@
 </div>
 <div class="card" data-source="sreality">
   <span class="source-badge source-sreality">Sreality</span>
-  <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_qA_E/nCTUX1iX5CNPfpBYtbGcPX16/6194.png?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
-  <div class="card-body">
-    <div class="card-title">Prodej bytu 3+kk 95 m²</div>
-    <div class="card-locality">📍 Řezáčovo náměstí, Praha 7 - Holešovice</div>
-    <div class="badges"><span class="badge badge-disp">2+1</span><span class="badge badge-label">🧱 Po rekonstrukci</span></div>
-    <div class="card-price price-sreality">18 670 000 Kč</div>
-    <div class="card-dates"><div><span>Vloženo:</span> 25. 4. 2026</div><div><span>Upraveno:</span> 25. 4. 2026</div><div class="full-width"><span>Zobrazeno:</span> 5 841 ×</div></div>
-    <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+1/-/1522049100" target="_blank" rel="noopener">Zobrazit inzerát →</a>
-  </div>
-</div>
-<div class="card" data-source="sreality">
-  <span class="source-badge source-sreality">Sreality</span>
   <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_qA_E/kcHp2YdDtCJexH684GblBKo/6e63.jpeg?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
   <div class="card-body">
     <div class="card-title">Prodej bytu 2+kk 64 m²</div>
@@ -3193,6 +3217,18 @@
 </div>
 <div class="card" data-source="sreality">
   <span class="source-badge source-sreality">Sreality</span>
+  <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_qA_D/kcHp2YdDtBM3KV3YgGadQGH/54e0.jpeg?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
+  <div class="card-body">
+    <div class="card-title">Prodej bytu 2+kk 58 m²</div>
+    <div class="card-locality">📍 Nepelova, Praha 9 - Hloubětín</div>
+    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-label">🧱 Velmi dobrý</span></div>
+    <div class="card-price price-sreality">9 890 000 Kč</div>
+    <div class="card-dates"><div><span>Vloženo:</span> 21. 4. 2026</div><div><span>Upraveno:</span> 2. 5. 2026</div><div class="full-width"><span>Zobrazeno:</span> 2 538 ×</div></div>
+    <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+kk/-/3813384268" target="_blank" rel="noopener">Zobrazit inzerát →</a>
+  </div>
+</div>
+<div class="card" data-source="sreality">
+  <span class="source-badge source-sreality">Sreality</span>
   <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_qA_E/kcHp2YdDtBRc2UBh2Ge8NRh/dd2b.png?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
   <div class="card-body">
     <div class="card-title">Prodej bytu 2+kk 53 m²</div>
@@ -3273,18 +3309,6 @@
     <div class="card-price price-sreality">8 721 000 Kč</div>
     <div class="card-dates"><div><span>Vloženo:</span> 21. 4. 2026</div><div><span>Upraveno:</span> 30. 4. 2026</div><div class="full-width"><span>Zobrazeno:</span> 859 ×</div></div>
     <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+kk/-/1023717452" target="_blank" rel="noopener">Zobrazit inzerát →</a>
-  </div>
-</div>
-<div class="card" data-source="sreality">
-  <span class="source-badge source-sreality">Sreality</span>
-  <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_qA_D/kcHp2YdDtBM3KV3YgGadQGH/54e0.jpeg?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
-  <div class="card-body">
-    <div class="card-title">Prodej bytu 2+kk 58 m²</div>
-    <div class="card-locality">📍 Nepelova, Praha 9 - Hloubětín</div>
-    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-label">🧱 Velmi dobrý</span></div>
-    <div class="card-price price-sreality">9 890 000 Kč</div>
-    <div class="card-dates"><div><span>Vloženo:</span> 21. 4. 2026</div><div><span>Upraveno:</span> 2. 5. 2026</div><div class="full-width"><span>Zobrazeno:</span> 2 538 ×</div></div>
-    <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+kk/-/3813384268" target="_blank" rel="noopener">Zobrazit inzerát →</a>
   </div>
 </div>
 <div class="card" data-source="sreality">
@@ -3513,6 +3537,18 @@
     <div class="card-price price-sreality">13 500 000 Kč</div>
     <div class="card-dates"><div><span>Vloženo:</span> 20. 4. 2026</div><div><span>Upraveno:</span> 2. 5. 2026</div><div class="full-width"><span>Zobrazeno:</span> 2 057 ×</div></div>
     <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+1/-/3199643724" target="_blank" rel="noopener">Zobrazit inzerát →</a>
+  </div>
+</div>
+<div class="card is-fresh" data-source="sreality">
+  <span class="source-badge source-sreality">Sreality</span>
+  <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_qA_D/kcHp2YdDtEDuRmBNZJGY7r1L/06e9.png?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
+  <div class="card-body">
+    <div class="card-title">Prodej bytu 2+kk 55 m² (Jednopodlažní)</div>
+    <div class="card-locality">📍 Přístavní, Praha 7 - Holešovice</div>
+    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-label">🧱 Po rekonstrukci</span></div>
+    <div class="card-price price-sreality">9 800 000 Kč</div>
+    <div class="card-dates"><div><span>Vloženo:</span> 19. 4. 2026</div><div><span>Upraveno:</span> 16. 5. 2026</div><div class="full-width"><span>Zobrazeno:</span> 2 592 ×</div></div>
+    <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+kk/-/3284578380" target="_blank" rel="noopener">Zobrazit inzerát →</a>
   </div>
 </div>
 <div class="card" data-source="sreality">
@@ -4797,6 +4833,18 @@
     <div class="card-price price-sreality">10 950 000 Kč</div>
     <div class="card-dates"><div><span>Vloženo:</span> 5. 4. 2026</div><div><span>Upraveno:</span> 28. 4. 2026</div><div class="full-width"><span>Zobrazeno:</span> 4 506 ×</div></div>
     <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+1/-/272347212" target="_blank" rel="noopener">Zobrazit inzerát →</a>
+  </div>
+</div>
+<div class="card is-fresh" data-source="sreality">
+  <span class="source-badge source-sreality">Sreality</span>
+  <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_qA_A/kcHp2YdDtCJexHSAOGPxM93/3bba.png?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
+  <div class="card-body">
+    <div class="card-title">Prodej bytu 3+kk 91 m² (Jednopodlažní)</div>
+    <div class="card-locality">📍 Sicherova, Praha 9 - Kyje</div>
+    <div class="badges"><span class="badge badge-disp">2+1</span><span class="badge badge-label">🧱 Velmi dobrý</span></div>
+    <div class="card-price price-sreality">11 820 000 Kč</div>
+    <div class="card-dates"><div><span>Vloženo:</span> 4. 4. 2026</div><div><span>Upraveno:</span> 13. 5. 2026</div><div class="full-width"><span>Zobrazeno:</span> 7 031 ×</div></div>
+    <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+1/-/2141471564" target="_blank" rel="noopener">Zobrazit inzerát →</a>
   </div>
 </div>
 <div class="card" data-source="sreality">
@@ -6157,18 +6205,6 @@
 </div>
 <div class="card" data-source="sreality">
   <span class="source-badge source-sreality">Sreality</span>
-  <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_p9_C/kcHp2YdDtDrxR2EBnGE5qBh/246b.png?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
-  <div class="card-body">
-    <div class="card-title">Prodej bytu 2+kk 51 m²</div>
-    <div class="card-locality">📍 Arnošta Valenty, Praha - Černý Most</div>
-    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-novostavba">🏗 Novostavba</span></div>
-    <div class="card-price price-sreality">2 990 000 Kč</div>
-    <div class="card-dates"><div><span>Vloženo:</span> 16. 3. 2026</div><div><span>Upraveno:</span> 3. 5. 2026</div><div class="full-width"><span>Zobrazeno:</span> 15 993 ×</div></div>
-    <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+kk/-/1745179468" target="_blank" rel="noopener">Zobrazit inzerát →</a>
-  </div>
-</div>
-<div class="card" data-source="sreality">
-  <span class="source-badge source-sreality">Sreality</span>
   <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_p9_C/nCTUX1iX5Do9kXDjaGE0d2Z/d7c0.png?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
   <div class="card-body">
     <div class="card-title">Prodej bytu 2+kk 64 m²</div>
@@ -7151,6 +7187,18 @@
     <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+kk/-/2980209484" target="_blank" rel="noopener">Zobrazit inzerát →</a>
   </div>
 </div>
+<div class="card is-fresh" data-source="sreality">
+  <span class="source-badge source-sreality">Sreality</span>
+  <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_p8_C/nPVpfd5QLLChvUCEnjF1UVJ9/e7b2.png?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
+  <div class="card-body">
+    <div class="card-title">Prodej bytu 3+kk 100 m²</div>
+    <div class="card-locality">📍 Velká skála, Praha 8 - Troja</div>
+    <div class="badges"><span class="badge badge-disp">2+1</span><span class="badge badge-label">🧱 Po rekonstrukci</span></div>
+    <div class="card-price price-sreality">17 990 000 Kč</div>
+    <div class="card-dates"><div><span>Vloženo:</span> 21. 2. 2026</div><div><span>Upraveno:</span> 11. 5. 2026</div><div class="full-width"><span>Zobrazeno:</span> 8 419 ×</div></div>
+    <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+1/-/1329750860" target="_blank" rel="noopener">Zobrazit inzerát →</a>
+  </div>
+</div>
 <div class="card" data-source="sreality">
   <span class="source-badge source-sreality">Sreality</span>
   <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_p8_C/nPVpfd5QLLDqk1BEjAF1V0Hh/c3fb.png?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
@@ -7245,6 +7293,18 @@
     <div class="card-price price-sreality">18 529 800 Kč</div>
     <div class="card-dates"><div><span>Vloženo:</span> 19. 2. 2026</div><div><span>Upraveno:</span> 30. 4. 2026</div><div class="full-width"><span>Zobrazeno:</span> 7 689 ×</div></div>
     <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+1/-/2007786316" target="_blank" rel="noopener">Zobrazit inzerát →</a>
+  </div>
+</div>
+<div class="card" data-source="sreality">
+  <span class="source-badge source-sreality">Sreality</span>
+  <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_p8_B/nPVpfd5QLLbHLYDLsFzlFe9/c529.jpeg?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
+  <div class="card-body">
+    <div class="card-title">Prodej bytu 2+kk 63 m²</div>
+    <div class="card-locality">📍 Bořivojova, Praha 3 - Žižkov</div>
+    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-label">🧱 Velmi dobrý</span></div>
+    <div class="card-price price-sreality">12 895 000 Kč</div>
+    <div class="card-dates"><div><span>Vloženo:</span> 18. 2. 2026</div><div><span>Upraveno:</span> 2. 5. 2026</div><div class="full-width"><span>Zobrazeno:</span> 9 122 ×</div></div>
+    <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+kk/-/1358783308" target="_blank" rel="noopener">Zobrazit inzerát →</a>
   </div>
 </div>
 <div class="card" data-source="sreality">
@@ -10631,6 +10691,18 @@
     <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+kk/-/450135372" target="_blank" rel="noopener">Zobrazit inzerát →</a>
   </div>
 </div>
+<div class="card is-fresh" data-source="sreality">
+  <span class="source-badge source-sreality">Sreality</span>
+  <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_p9_C/kcHp2YdDtBM3KVElnGGES0E/5961.jpeg?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
+  <div class="card-body">
+    <div class="card-title">Prodej bytu 2+kk 51 m²</div>
+    <div class="card-locality">📍 Třinecká, Praha 9 - Letňany</div>
+    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-novostavba">🏗 Novostavba</span></div>
+    <div class="card-price price-sreality">6 900 000 Kč</div>
+    <div class="card-dates"><div><span>Vloženo:</span> 22. 10. 2023</div><div><span>Upraveno:</span> 16. 5. 2026</div><div class="full-width"><span>Zobrazeno:</span> 63 528 ×</div></div>
+    <a class="card-link link-sreality" href="https://www.sreality.cz/detail/prodej/byt/2+kk/-/1048020300" target="_blank" rel="noopener">Zobrazit inzerát →</a>
+  </div>
+</div>
 <div class="card" data-source="sreality">
   <span class="source-badge source-sreality">Sreality</span>
   <img class="card-img" src="https://d18-a.sdn.cz/d_18/c_img_p8_C/kY1K2LlXQB7HUzD3JF2nEbY/6dcc.jpeg?fl=res,400,300,3|shr,,20|jpg,90" loading="lazy" alt="">
@@ -10657,6 +10729,30 @@
 </div>
 <div class="card is-fresh" data-source="idnes">
   <span class="source-badge source-idnes">iDnes</span>
+  <img class="card-img" src="https://sta-reality2.1gr.cz/sta/compile/thumbs/9/b/8/931d910d9c3595e3e4a3a3285583e.webp" loading="lazy" alt="">
+  <div class="card-body">
+    <div class="card-title">bytu 2+kk 52 m²</div>
+    <div class="card-locality">📍 Vyšší, Praha 4 - Nusle, okres Praha</div>
+    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-cihla">🧱 Cihla</span></div>
+    <div class="card-price price-idnes">7 990 000 Kč</div>
+    
+    <a class="card-link link-idnes" href="https://reality.idnes.cz/detail/prodej/byt/praha-4-vyssi/6a0783893d8dee65ca0d732a/" target="_blank" rel="noopener">Zobrazit inzerát →</a>
+  </div>
+</div>
+<div class="card" data-source="idnes">
+  <span class="source-badge source-idnes">iDnes</span>
+  <img class="card-img" src="https://sta-reality2.1gr.cz/sta/compile/thumbs/5/0/2/1990d0e2d6720c601b140896aa42f.webp" loading="lazy" alt="">
+  <div class="card-body">
+    <div class="card-title">bytu 2+kk 72 m²</div>
+    <div class="card-locality">📍 Praha 5 - Smíchov</div>
+    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-cihla">🧱 Cihla</span></div>
+    <div class="card-price price-idnes">12 295 000 Kč</div>
+    
+    <a class="card-link link-idnes" href="https://reality.idnes.cz/detail/prodej/byt/praha/69fc5a504daf0274470a029e/" target="_blank" rel="noopener">Zobrazit inzerát →</a>
+  </div>
+</div>
+<div class="card" data-source="idnes">
+  <span class="source-badge source-idnes">iDnes</span>
   <img class="card-img" src="https://sta-reality2.1gr.cz/sta/compile/thumbs/4/1/4/b772382b223841b8ae8549324f35d.webp" loading="lazy" alt="">
   <div class="card-body">
     <div class="card-title">bytu 2+kk 73 m²</div>
@@ -10667,7 +10763,7 @@
     <a class="card-link link-idnes" href="https://reality.idnes.cz/detail/prodej/byt/praha-5-zborovska/6a089b202a2e6e04d8075dd7/" target="_blank" rel="noopener">Zobrazit inzerát →</a>
   </div>
 </div>
-<div class="card is-fresh" data-source="idnes">
+<div class="card" data-source="idnes">
   <span class="source-badge source-idnes">iDnes</span>
   <img class="card-img" src="https://sta-reality2.1gr.cz/sta/compile/thumbs/b/1/4/ba740cb8bb1e963071acd272c0315.webp" loading="lazy" alt="">
   <div class="card-body">
@@ -10679,7 +10775,7 @@
     <a class="card-link link-idnes" href="https://reality.idnes.cz/detail/prodej/byt/praha-22-saturnova/6a088fd2f737ce0a560b7d8d/" target="_blank" rel="noopener">Zobrazit inzerát →</a>
   </div>
 </div>
-<div class="card is-fresh" data-source="idnes">
+<div class="card" data-source="idnes">
   <span class="source-badge source-idnes">iDnes</span>
   <img class="card-img" src="https://sta-reality2.1gr.cz/sta/compile/thumbs/6/e/5/a619a99a7a6962f92559b0f5a7040.webp" loading="lazy" alt="">
   <div class="card-body">
@@ -10691,7 +10787,7 @@
     <a class="card-link link-idnes" href="https://reality.idnes.cz/detail/prodej/byt/praha-10-ruska/6a088e07122147be380da723/" target="_blank" rel="noopener">Zobrazit inzerát →</a>
   </div>
 </div>
-<div class="card is-fresh" data-source="idnes">
+<div class="card" data-source="idnes">
   <span class="source-badge source-idnes">iDnes</span>
   <img class="card-img" src="https://sta-reality2.1gr.cz/sta/compile/thumbs/6/0/7/2ac3c00b9cef5d3bd35f6a333ab20.webp" loading="lazy" alt="">
   <div class="card-body">
@@ -10701,102 +10797,6 @@
     <div class="card-price price-idnes">7 990 000 Kč</div>
     
     <a class="card-link link-idnes" href="https://reality.idnes.cz/detail/prodej/byt/praha-15-u-lipove-aleje/6a088b3f692cf7fc2f089475/" target="_blank" rel="noopener">Zobrazit inzerát →</a>
-  </div>
-</div>
-<div class="card is-fresh" data-source="idnes">
-  <span class="source-badge source-idnes">iDnes</span>
-  <img class="card-img" src="https://sta-reality2.1gr.cz/sta/compile/thumbs/e/b/3/0d840e07eac3f872d58f6fcab4501.webp" loading="lazy" alt="">
-  <div class="card-body">
-    <div class="card-title">bytu 2+kk 65 m²</div>
-    <div class="card-locality">📍 Praha 5 - Smíchov</div>
-    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-cihla">🧱 Cihla</span></div>
-    <div class="card-price price-idnes">12 295 000 Kč</div>
-    
-    <a class="card-link link-idnes" href="https://reality.idnes.cz/detail/prodej/byt/praha/69cbc1d687da7649730fe623/" target="_blank" rel="noopener">Zobrazit inzerát →</a>
-  </div>
-</div>
-<div class="card is-fresh" data-source="idnes">
-  <span class="source-badge source-idnes">iDnes</span>
-  <img class="card-img" src="https://sta-reality2.1gr.cz/sta/compile/thumbs/0/6/2/8af247a1bf69e759f9202c43b940b.webp" loading="lazy" alt="">
-  <div class="card-body">
-    <div class="card-title">bytu 2+kk 50 m²</div>
-    <div class="card-locality">📍 V zahradách, Praha 8 - Libeň</div>
-    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-cihla">🧱 Cihla</span></div>
-    <div class="card-price price-idnes">8 499 500 Kč</div>
-    
-    <a class="card-link link-idnes" href="https://reality.idnes.cz/detail/prodej/byt/praha-8-v-zahradach/69e4ce957d756a003c05fde9/" target="_blank" rel="noopener">Zobrazit inzerát →</a>
-  </div>
-</div>
-<div class="card is-fresh" data-source="idnes">
-  <span class="source-badge source-idnes">iDnes</span>
-  <img class="card-img" src="https://sta-reality2.1gr.cz/sta/compile/thumbs/d/b/e/b622c9d183e5b6fe35fbd672c4943.webp" loading="lazy" alt="">
-  <div class="card-body">
-    <div class="card-title">bytu 2+kk 71 m²</div>
-    <div class="card-locality">📍 Holečkova, Praha 5 - Smíchov</div>
-    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-cihla">🧱 Cihla</span></div>
-    <div class="card-price price-idnes">15 500 000 Kč</div>
-    
-    <a class="card-link link-idnes" href="https://reality.idnes.cz/detail/prodej/byt/praha-5-holeckova/69f1dbd7feb8c3a4a508a7da/" target="_blank" rel="noopener">Zobrazit inzerát →</a>
-  </div>
-</div>
-<div class="card is-fresh" data-source="idnes">
-  <span class="source-badge source-idnes">iDnes</span>
-  <img class="card-img" src="https://sta-reality2.1gr.cz/sta/compile/thumbs/f/c/6/4f160383abf7118dd0636f7d8678d.webp" loading="lazy" alt="">
-  <div class="card-body">
-    <div class="card-title">bytu 2+kk 36 m²</div>
-    <div class="card-locality">📍 Na Viktorce, Praha 3 - Žižkov</div>
-    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-cihla">🧱 Cihla</span></div>
-    <div class="card-price price-idnes">7 450 000 Kč</div>
-    
-    <a class="card-link link-idnes" href="https://reality.idnes.cz/detail/prodej/byt/praha-3-na-viktorce/6a059a09430016c337000916/" target="_blank" rel="noopener">Zobrazit inzerát →</a>
-  </div>
-</div>
-<div class="card is-fresh" data-source="idnes">
-  <span class="source-badge source-idnes">iDnes</span>
-  <img class="card-img" src="https://sta-reality2.1gr.cz/sta/compile/thumbs/d/3/7/562f0a9bb64e96b9fc76dd3034888.webp" loading="lazy" alt="">
-  <div class="card-body">
-    <div class="card-title">bytu 2+kk 65 m²</div>
-    <div class="card-locality">📍 Modenská, Praha 10 - Horní Měcholupy</div>
-    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-cihla">🧱 Cihla</span></div>
-    <div class="card-price price-idnes">9 200 000 Kč</div>
-    
-    <a class="card-link link-idnes" href="https://reality.idnes.cz/detail/prodej/byt/praha-15-modenska/69eb4845d4f618a2bc005bba/" target="_blank" rel="noopener">Zobrazit inzerát →</a>
-  </div>
-</div>
-<div class="card is-fresh" data-source="idnes">
-  <span class="source-badge source-idnes">iDnes</span>
-  <img class="card-img" src="https://sta-reality2.1gr.cz/sta/compile/thumbs/f/8/9/2356047b797516471c068c0d56132.webp" loading="lazy" alt="">
-  <div class="card-body">
-    <div class="card-title">bytu 2+kk 66 m²</div>
-    <div class="card-locality">📍 Peroutkova, Praha 5 - Smíchov</div>
-    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-cihla">🧱 Cihla</span><span class="badge badge-promo">🔻 Zlevněno</span></div>
-    <div class="card-price price-idnes">8 990 000 Kč</div>
-    
-    <a class="card-link link-idnes" href="https://reality.idnes.cz/detail/prodej/byt/praha-5-peroutkova/69ae93274c79a0fe140860c5/" target="_blank" rel="noopener">Zobrazit inzerát →</a>
-  </div>
-</div>
-<div class="card is-fresh" data-source="idnes">
-  <span class="source-badge source-idnes">iDnes</span>
-  <img class="card-img" src="https://sta-reality2.1gr.cz/sta/compile/thumbs/f/1/d/73d6e9c54507bcfa72e668e25f260.webp" loading="lazy" alt="">
-  <div class="card-body">
-    <div class="card-title">bytu 2+1 94 m²</div>
-    <div class="card-locality">📍 Karlínské náměstí, Praha 8 - Karlín</div>
-    <div class="badges"><span class="badge badge-disp">2+1</span><span class="badge badge-cihla">🧱 Cihla</span></div>
-    <div class="card-price price-idnes">16 390 000 Kč</div>
-    
-    <a class="card-link link-idnes" href="https://reality.idnes.cz/detail/prodej/byt/praha-8-karlinske-namesti/69bd79c1239a7312a0066ac7/" target="_blank" rel="noopener">Zobrazit inzerát →</a>
-  </div>
-</div>
-<div class="card is-fresh" data-source="idnes">
-  <span class="source-badge source-idnes">iDnes</span>
-  <img class="card-img" src="https://sta-reality2.1gr.cz/sta/compile/thumbs/5/0/2/1990d0e2d6720c601b140896aa42f.webp" loading="lazy" alt="">
-  <div class="card-body">
-    <div class="card-title">bytu 2+kk 72 m²</div>
-    <div class="card-locality">📍 Praha 5 - Smíchov</div>
-    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-cihla">🧱 Cihla</span></div>
-    <div class="card-price price-idnes">12 295 000 Kč</div>
-    
-    <a class="card-link link-idnes" href="https://reality.idnes.cz/detail/prodej/byt/praha/69fc5a504daf0274470a029e/" target="_blank" rel="noopener">Zobrazit inzerát →</a>
   </div>
 </div>
 <div class="card" data-source="idnes">
@@ -11041,14 +11041,86 @@
 </div>
 <div class="card" data-source="idnes">
   <span class="source-badge source-idnes">iDnes</span>
-  <img class="card-img" src="https://sta-reality2.1gr.cz/sta/compile/thumbs/f/3/d/106272643a917f00f5ef4c4c3fca0.webp" loading="lazy" alt="">
+  <img class="card-img" src="https://sta-reality2.1gr.cz/sta/compile/thumbs/e/b/3/0d840e07eac3f872d58f6fcab4501.webp" loading="lazy" alt="">
   <div class="card-body">
-    <div class="card-title">bytu 2+kk 57 m²</div>
-    <div class="card-locality">📍 Čerpadlová, Praha 9 - Vysočany</div>
+    <div class="card-title">bytu 2+kk 65 m²</div>
+    <div class="card-locality">📍 Praha 5 - Smíchov</div>
     <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-cihla">🧱 Cihla</span></div>
-    <div class="card-price price-idnes">8 250 000 Kč</div>
+    <div class="card-price price-idnes">12 295 000 Kč</div>
     
-    <a class="card-link link-idnes" href="https://reality.idnes.cz/detail/prodej/byt/praha-9-cerpadlova/6980738c1010e144040e514c/" target="_blank" rel="noopener">Zobrazit inzerát →</a>
+    <a class="card-link link-idnes" href="https://reality.idnes.cz/detail/prodej/byt/praha/69cbc1d687da7649730fe623/" target="_blank" rel="noopener">Zobrazit inzerát →</a>
+  </div>
+</div>
+<div class="card" data-source="idnes">
+  <span class="source-badge source-idnes">iDnes</span>
+  <img class="card-img" src="https://sta-reality2.1gr.cz/sta/compile/thumbs/0/6/2/8af247a1bf69e759f9202c43b940b.webp" loading="lazy" alt="">
+  <div class="card-body">
+    <div class="card-title">bytu 2+kk 50 m²</div>
+    <div class="card-locality">📍 V zahradách, Praha 8 - Libeň</div>
+    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-cihla">🧱 Cihla</span></div>
+    <div class="card-price price-idnes">8 499 500 Kč</div>
+    
+    <a class="card-link link-idnes" href="https://reality.idnes.cz/detail/prodej/byt/praha-8-v-zahradach/69e4ce957d756a003c05fde9/" target="_blank" rel="noopener">Zobrazit inzerát →</a>
+  </div>
+</div>
+<div class="card" data-source="idnes">
+  <span class="source-badge source-idnes">iDnes</span>
+  <img class="card-img" src="https://sta-reality2.1gr.cz/sta/compile/thumbs/d/b/e/b622c9d183e5b6fe35fbd672c4943.webp" loading="lazy" alt="">
+  <div class="card-body">
+    <div class="card-title">bytu 2+kk 71 m²</div>
+    <div class="card-locality">📍 Holečkova, Praha 5 - Smíchov</div>
+    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-cihla">🧱 Cihla</span></div>
+    <div class="card-price price-idnes">15 500 000 Kč</div>
+    
+    <a class="card-link link-idnes" href="https://reality.idnes.cz/detail/prodej/byt/praha-5-holeckova/69f1dbd7feb8c3a4a508a7da/" target="_blank" rel="noopener">Zobrazit inzerát →</a>
+  </div>
+</div>
+<div class="card" data-source="idnes">
+  <span class="source-badge source-idnes">iDnes</span>
+  <img class="card-img" src="https://sta-reality2.1gr.cz/sta/compile/thumbs/f/c/6/4f160383abf7118dd0636f7d8678d.webp" loading="lazy" alt="">
+  <div class="card-body">
+    <div class="card-title">bytu 2+kk 36 m²</div>
+    <div class="card-locality">📍 Na Viktorce, Praha 3 - Žižkov</div>
+    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-cihla">🧱 Cihla</span></div>
+    <div class="card-price price-idnes">7 450 000 Kč</div>
+    
+    <a class="card-link link-idnes" href="https://reality.idnes.cz/detail/prodej/byt/praha-3-na-viktorce/6a059a09430016c337000916/" target="_blank" rel="noopener">Zobrazit inzerát →</a>
+  </div>
+</div>
+<div class="card" data-source="idnes">
+  <span class="source-badge source-idnes">iDnes</span>
+  <img class="card-img" src="https://sta-reality2.1gr.cz/sta/compile/thumbs/d/3/7/562f0a9bb64e96b9fc76dd3034888.webp" loading="lazy" alt="">
+  <div class="card-body">
+    <div class="card-title">bytu 2+kk 65 m²</div>
+    <div class="card-locality">📍 Modenská, Praha 10 - Horní Měcholupy</div>
+    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-cihla">🧱 Cihla</span></div>
+    <div class="card-price price-idnes">9 200 000 Kč</div>
+    
+    <a class="card-link link-idnes" href="https://reality.idnes.cz/detail/prodej/byt/praha-15-modenska/69eb4845d4f618a2bc005bba/" target="_blank" rel="noopener">Zobrazit inzerát →</a>
+  </div>
+</div>
+<div class="card" data-source="idnes">
+  <span class="source-badge source-idnes">iDnes</span>
+  <img class="card-img" src="https://sta-reality2.1gr.cz/sta/compile/thumbs/f/8/9/2356047b797516471c068c0d56132.webp" loading="lazy" alt="">
+  <div class="card-body">
+    <div class="card-title">bytu 2+kk 66 m²</div>
+    <div class="card-locality">📍 Peroutkova, Praha 5 - Smíchov</div>
+    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-cihla">🧱 Cihla</span><span class="badge badge-promo">🔻 Zlevněno</span></div>
+    <div class="card-price price-idnes">8 990 000 Kč</div>
+    
+    <a class="card-link link-idnes" href="https://reality.idnes.cz/detail/prodej/byt/praha-5-peroutkova/69ae93274c79a0fe140860c5/" target="_blank" rel="noopener">Zobrazit inzerát →</a>
+  </div>
+</div>
+<div class="card" data-source="idnes">
+  <span class="source-badge source-idnes">iDnes</span>
+  <img class="card-img" src="https://sta-reality2.1gr.cz/sta/compile/thumbs/f/1/d/73d6e9c54507bcfa72e668e25f260.webp" loading="lazy" alt="">
+  <div class="card-body">
+    <div class="card-title">bytu 2+1 94 m²</div>
+    <div class="card-locality">📍 Karlínské náměstí, Praha 8 - Karlín</div>
+    <div class="badges"><span class="badge badge-disp">2+1</span><span class="badge badge-cihla">🧱 Cihla</span></div>
+    <div class="card-price price-idnes">16 390 000 Kč</div>
+    
+    <a class="card-link link-idnes" href="https://reality.idnes.cz/detail/prodej/byt/praha-8-karlinske-namesti/69bd79c1239a7312a0066ac7/" target="_blank" rel="noopener">Zobrazit inzerát →</a>
   </div>
 </div>
 <div class="card" data-source="idnes">
@@ -18181,6 +18253,18 @@
 </div>
 <div class="card is-fresh" data-source="bezrealitky">
   <span class="source-badge source-bezrealitky">Bezrealitky</span>
+  <img class="card-img" src="https://api.bezrealitky.cz/media/cache/record_thumb/data/images/advert/1023k/1023800/1778862554-rzapjcgktm-upraven-c3-a1.jpg" loading="lazy" alt="">
+  <div class="card-body">
+    <div class="card-title">2+kk 54 m²</div>
+    <div class="card-locality">📍 Dělnická, Praha - Holešovice</div>
+    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-label">🧱 Po rekonstrukci</span><span class="badge badge-new">Nový inzerát</span></div>
+    <div class="card-price price-bezrealitky">10 590 000 Kč</div>
+    <div class="card-dates"><div><span>Vloženo:</span> Aktivní: 1 den</div></div>
+    <a class="card-link link-bezrealitky" href="https://www.bezrealitky.cz/nemovitosti-byty-domy/1023800-nabidka-prodej-bytu-delnicka-praha" target="_blank" rel="noopener">Zobrazit inzerát →</a>
+  </div>
+</div>
+<div class="card is-fresh" data-source="bezrealitky">
+  <span class="source-badge source-bezrealitky">Bezrealitky</span>
   <img class="card-img" src="https://api.bezrealitky.cz/media/cache/record_thumb/data/images/advert/1023k/1023742/1778838751-zhxqbxjldo-19.jpg" loading="lazy" alt="">
   <div class="card-body">
     <div class="card-title">2+kk 53 m²</div>
@@ -18301,18 +18385,6 @@
 </div>
 <div class="card is-fresh" data-source="bezrealitky">
   <span class="source-badge source-bezrealitky">Bezrealitky</span>
-  <img class="card-img" src="https://api.bezrealitky.cz/media/cache/record_thumb/data/images/advert/1021k/1021919/1778432242-ohboesywfv-img-4412-7.jpg" loading="lazy" alt="">
-  <div class="card-body">
-    <div class="card-title">2+kk 44 m²</div>
-    <div class="card-locality">📍 Sportovní, Praha - Vršovice</div>
-    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-label">🧱 Velmi dobrý</span></div>
-    <div class="card-price price-bezrealitky">8 650 000 Kč</div>
-    <div class="card-dates"><div><span>Vloženo:</span> Aktivní: 5 dní</div></div>
-    <a class="card-link link-bezrealitky" href="https://www.bezrealitky.cz/nemovitosti-byty-domy/1021919-nabidka-prodej-bytu-sportovni-praha" target="_blank" rel="noopener">Zobrazit inzerát →</a>
-  </div>
-</div>
-<div class="card is-fresh" data-source="bezrealitky">
-  <span class="source-badge source-bezrealitky">Bezrealitky</span>
   <img class="card-img" src="https://api.bezrealitky.cz/media/cache/record_thumb/data/images/advert/1007k/1007966/1778396050-ptetojythz-dsc07744.jpg" loading="lazy" alt="">
   <div class="card-body">
     <div class="card-title">2+kk 58 m²</div>
@@ -18325,13 +18397,25 @@
 </div>
 <div class="card is-fresh" data-source="bezrealitky">
   <span class="source-badge source-bezrealitky">Bezrealitky</span>
+  <img class="card-img" src="https://api.bezrealitky.cz/media/cache/record_thumb/data/images/advert/1021k/1021919/1778432242-ohboesywfv-img-4412-7.jpg" loading="lazy" alt="">
+  <div class="card-body">
+    <div class="card-title">2+kk 44 m²</div>
+    <div class="card-locality">📍 Sportovní, Praha - Vršovice</div>
+    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-label">🧱 Velmi dobrý</span></div>
+    <div class="card-price price-bezrealitky">8 650 000 Kč</div>
+    <div class="card-dates"><div><span>Vloženo:</span> Aktivní: 6 dní</div></div>
+    <a class="card-link link-bezrealitky" href="https://www.bezrealitky.cz/nemovitosti-byty-domy/1021919-nabidka-prodej-bytu-sportovni-praha" target="_blank" rel="noopener">Zobrazit inzerát →</a>
+  </div>
+</div>
+<div class="card is-fresh" data-source="bezrealitky">
+  <span class="source-badge source-bezrealitky">Bezrealitky</span>
   <img class="card-img" src="https://api.bezrealitky.cz/media/cache/record_thumb/data/images/advert/1020k/1020926/1778170478-ozvzvmrqoy-img-2370.jpg" loading="lazy" alt="">
   <div class="card-body">
     <div class="card-title">2+kk 50 m²</div>
     <div class="card-locality">📍 U Lihovaru, Praha - Smíchov</div>
     <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-novostavba">🏗 Novostavba</span></div>
     <div class="card-price price-bezrealitky">11 000 000 Kč</div>
-    <div class="card-dates"><div><span>Vloženo:</span> Aktivní: 8 dní</div></div>
+    <div class="card-dates"><div><span>Vloženo:</span> Aktivní: 9 dní</div></div>
     <a class="card-link link-bezrealitky" href="https://www.bezrealitky.cz/nemovitosti-byty-domy/1020926-nabidka-prodej-bytu-u-lihovaru-praha" target="_blank" rel="noopener">Zobrazit inzerát →</a>
   </div>
 </div>
@@ -18553,18 +18637,6 @@
 </div>
 <div class="card is-fresh" data-source="bezrealitky">
   <span class="source-badge source-bezrealitky">Bezrealitky</span>
-  <img class="card-img" src="https://api.bezrealitky.cz/media/cache/record_thumb/data/images/advert/1015k/1015840/1776925363-gbjzbqimgn-2-1.jpg" loading="lazy" alt="">
-  <div class="card-body">
-    <div class="card-title">2+kk 40 m²</div>
-    <div class="card-locality">📍 Krchlebská, Praha - Krč</div>
-    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-label">🧱 Velmi dobrý</span></div>
-    <div class="card-price price-bezrealitky">7 172 000 Kč</div>
-    <div class="card-dates"><div><span>Vloženo:</span> Aktivní: 20 dní</div></div>
-    <a class="card-link link-bezrealitky" href="https://www.bezrealitky.cz/nemovitosti-byty-domy/1015840-nabidka-prodej-bytu-krchlebska-praha" target="_blank" rel="noopener">Zobrazit inzerát →</a>
-  </div>
-</div>
-<div class="card is-fresh" data-source="bezrealitky">
-  <span class="source-badge source-bezrealitky">Bezrealitky</span>
   <img class="card-img" src="https://api.bezrealitky.cz/media/cache/record_thumb/data/images/advert/1016k/1016809/1777165766-ssxbsvyisz-img-4052.jpg" loading="lazy" alt="">
   <div class="card-body">
     <div class="card-title">2+kk 40 m²</div>
@@ -18645,6 +18717,18 @@
     <div class="card-price price-bezrealitky">8 330 000 Kč</div>
     <div class="card-dates"><div><span>Vloženo:</span> Aktivní: 21 dní</div></div>
     <a class="card-link link-bezrealitky" href="https://www.bezrealitky.cz/nemovitosti-byty-domy/342451-nabidka-prodej-bytu-biskupcova" target="_blank" rel="noopener">Zobrazit inzerát →</a>
+  </div>
+</div>
+<div class="card is-fresh" data-source="bezrealitky">
+  <span class="source-badge source-bezrealitky">Bezrealitky</span>
+  <img class="card-img" src="https://api.bezrealitky.cz/media/cache/record_thumb/data/images/advert/1015k/1015840/1776925363-gbjzbqimgn-2-1.jpg" loading="lazy" alt="">
+  <div class="card-body">
+    <div class="card-title">2+kk 40 m²</div>
+    <div class="card-locality">📍 Krchlebská, Praha - Krč</div>
+    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-label">🧱 Velmi dobrý</span></div>
+    <div class="card-price price-bezrealitky">7 172 000 Kč</div>
+    <div class="card-dates"><div><span>Vloženo:</span> Aktivní: 21 dní</div></div>
+    <a class="card-link link-bezrealitky" href="https://www.bezrealitky.cz/nemovitosti-byty-domy/1015840-nabidka-prodej-bytu-krchlebska-praha" target="_blank" rel="noopener">Zobrazit inzerát →</a>
   </div>
 </div>
 <div class="card is-fresh" data-source="bezrealitky">
@@ -18829,18 +18913,6 @@
 </div>
 <div class="card is-fresh" data-source="bezrealitky">
   <span class="source-badge source-bezrealitky">Bezrealitky</span>
-  <img class="card-img" src="https://api.bezrealitky.cz/media/cache/record_thumb/data/images/advert/1014k/1014293/1776617030-kwzhgeuknt-screenshot-2026-04-17-202920.png" loading="lazy" alt="">
-  <div class="card-body">
-    <div class="card-title">2+kk 45 m²</div>
-    <div class="card-locality">📍 U Továren, Praha - Hostivař</div>
-    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-novostavba">🏗 Novostavba</span></div>
-    <div class="card-price price-bezrealitky">8 450 000 Kč</div>
-    <div class="card-dates"><div><span>Vloženo:</span> Aktivní: 26 dní</div></div>
-    <a class="card-link link-bezrealitky" href="https://www.bezrealitky.cz/nemovitosti-byty-domy/1014293-nabidka-prodej-bytu-u-tovaren-praha" target="_blank" rel="noopener">Zobrazit inzerát →</a>
-  </div>
-</div>
-<div class="card is-fresh" data-source="bezrealitky">
-  <span class="source-badge source-bezrealitky">Bezrealitky</span>
   <img class="card-img" src="https://api.bezrealitky.cz/media/cache/record_thumb/data/images/advert/1001k/1001327/1773523269-vkvomqcypf-img-3015.jpg" loading="lazy" alt="">
   <div class="card-body">
     <div class="card-title">2+kk 42 m²</div>
@@ -18853,14 +18925,14 @@
 </div>
 <div class="card is-fresh" data-source="bezrealitky">
   <span class="source-badge source-bezrealitky">Bezrealitky</span>
-  <img class="card-img" src="https://api.bezrealitky.cz/media/cache/record_thumb/data/images/advert/1013k/1013334/1776355808-xtumpgprbt-img-3146-large.jpg" loading="lazy" alt="">
+  <img class="card-img" src="https://api.bezrealitky.cz/media/cache/record_thumb/data/images/advert/1014k/1014293/1776617030-kwzhgeuknt-screenshot-2026-04-17-202920.png" loading="lazy" alt="">
   <div class="card-body">
-    <div class="card-title">2+kk 53 m²</div>
-    <div class="card-locality">📍 Kolbenova, Praha - Vysočany</div>
+    <div class="card-title">2+kk 45 m²</div>
+    <div class="card-locality">📍 U Továren, Praha - Hostivař</div>
     <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-novostavba">🏗 Novostavba</span></div>
-    <div class="card-price price-bezrealitky">10 990 000 Kč</div>
-    <div class="card-dates"><div><span>Vloženo:</span> Aktivní: 29 dní</div></div>
-    <a class="card-link link-bezrealitky" href="https://www.bezrealitky.cz/nemovitosti-byty-domy/1013334-nabidka-prodej-bytu-kolbenova-praha" target="_blank" rel="noopener">Zobrazit inzerát →</a>
+    <div class="card-price price-bezrealitky">8 450 000 Kč</div>
+    <div class="card-dates"><div><span>Vloženo:</span> Aktivní: 27 dní</div></div>
+    <a class="card-link link-bezrealitky" href="https://www.bezrealitky.cz/nemovitosti-byty-domy/1014293-nabidka-prodej-bytu-u-tovaren-praha" target="_blank" rel="noopener">Zobrazit inzerát →</a>
   </div>
 </div>
 <div class="card is-fresh" data-source="bezrealitky">
@@ -18909,6 +18981,18 @@
     <div class="card-price price-bezrealitky">7 999 900 Kč</div>
     <div class="card-dates"><div><span>Vloženo:</span> Aktivní: 30 dní</div></div>
     <a class="card-link link-bezrealitky" href="https://www.bezrealitky.cz/nemovitosti-byty-domy/1013303-nabidka-prodej-bytu-jakutska-praha" target="_blank" rel="noopener">Zobrazit inzerát →</a>
+  </div>
+</div>
+<div class="card is-fresh" data-source="bezrealitky">
+  <span class="source-badge source-bezrealitky">Bezrealitky</span>
+  <img class="card-img" src="https://api.bezrealitky.cz/media/cache/record_thumb/data/images/advert/1013k/1013334/1776355808-xtumpgprbt-img-3146-large.jpg" loading="lazy" alt="">
+  <div class="card-body">
+    <div class="card-title">2+kk 53 m²</div>
+    <div class="card-locality">📍 Kolbenova, Praha - Vysočany</div>
+    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-novostavba">🏗 Novostavba</span></div>
+    <div class="card-price price-bezrealitky">10 990 000 Kč</div>
+    <div class="card-dates"><div><span>Vloženo:</span> Aktivní: 30 dní</div></div>
+    <a class="card-link link-bezrealitky" href="https://www.bezrealitky.cz/nemovitosti-byty-domy/1013334-nabidka-prodej-bytu-kolbenova-praha" target="_blank" rel="noopener">Zobrazit inzerát →</a>
   </div>
 </div>
 <div class="card is-fresh" data-source="bezrealitky">
@@ -19027,7 +19111,7 @@
     <div class="card-locality">📍 Vosmíkových, Praha - Libeň</div>
     <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-label">🧱 Velmi dobrý</span></div>
     <div class="card-price price-bezrealitky">6 380 000 Kč</div>
-    <div class="card-dates"><div><span>Vloženo:</span> Aktivní: 33 dní</div></div>
+    <div class="card-dates"><div><span>Vloženo:</span> Aktivní: 34 dní</div></div>
     <a class="card-link link-bezrealitky" href="https://www.bezrealitky.cz/nemovitosti-byty-domy/1011644-nabidka-prodej-bytu-vosmikovych-praha" target="_blank" rel="noopener">Zobrazit inzerát →</a>
   </div>
 </div>
@@ -19135,7 +19219,7 @@
     <div class="card-locality">📍 K Berance, Praha - Horní Počernice</div>
     <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-novostavba">🏗 Novostavba</span></div>
     <div class="card-price price-bezrealitky">8 890 000 Kč</div>
-    <div class="card-dates"><div><span>Vloženo:</span> Aktivní: 49 dní</div></div>
+    <div class="card-dates"><div><span>Vloženo:</span> Aktivní: 50 dní</div></div>
     <a class="card-link link-bezrealitky" href="https://www.bezrealitky.cz/nemovitosti-byty-domy/1006227-nabidka-prodej-bytu-k-berance-praha" target="_blank" rel="noopener">Zobrazit inzerát →</a>
   </div>
 </div>
@@ -19255,7 +19339,7 @@
     <div class="card-locality">📍 Nad Šestikopy, Praha - Prosek</div>
     <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-label">🧱 Velmi dobrý</span></div>
     <div class="card-price price-bezrealitky">10 100 000 Kč</div>
-    <div class="card-dates"><div><span>Vloženo:</span> Aktivní: 85 dní</div></div>
+    <div class="card-dates"><div><span>Vloženo:</span> Aktivní: 86 dní</div></div>
     <a class="card-link link-bezrealitky" href="https://www.bezrealitky.cz/nemovitosti-byty-domy/992777-nabidka-prodej-bytu-nad-sestikopy-praha" target="_blank" rel="noopener">Zobrazit inzerát →</a>
   </div>
 </div>
@@ -19329,18 +19413,6 @@
     <div class="card-price price-bezrealitky">6 700 000 Kč</div>
     
     <a class="card-link link-bezrealitky" href="https://www.bezrealitky.cz/nemovitosti-byty-domy/1023813-nabidka-prodej-bytu-kolbenova-praha" target="_blank" rel="noopener">Zobrazit inzerát →</a>
-  </div>
-</div>
-<div class="card is-fresh" data-source="bezrealitky">
-  <span class="source-badge source-bezrealitky">Bezrealitky</span>
-  <img class="card-img" src="https://api.bezrealitky.cz/media/cache/record_thumb/data/images/advert/1023k/1023800/1778862554-rzapjcgktm-upraven-c3-a1.jpg" loading="lazy" alt="">
-  <div class="card-body">
-    <div class="card-title">2+kk 54 m²</div>
-    <div class="card-locality">📍 Dělnická, Praha - Holešovice</div>
-    <div class="badges"><span class="badge badge-disp">2+kk</span><span class="badge badge-label">🧱 Po rekonstrukci</span><span class="badge badge-new">Nový inzerát</span></div>
-    <div class="card-price price-bezrealitky">10 590 000 Kč</div>
-    
-    <a class="card-link link-bezrealitky" href="https://www.bezrealitky.cz/nemovitosti-byty-domy/1023800-nabidka-prodej-bytu-delnicka-praha" target="_blank" rel="noopener">Zobrazit inzerát →</a>
   </div>
 </div>
 <div class="card is-fresh" data-source="bezrealitky">
